@@ -17,3 +17,73 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int x=rand()%6;
+	int temp;
+	switch (x)
+	{
+		case(0):
+		temp=a;a=b;b=temp;
+		break;
+		case(1):
+		temp=a;a=c;c=temp;
+		break;
+		case(2):
+		temp=a;a=d;d=temp;
+		break;
+		case(3):
+		temp=b;b=c;c=temp;
+		break;
+		case(4):
+		temp=b;b=d;d=temp;
+		break;
+		case(5):
+		temp=c;c=d;d=temp;
+		break;
+	}
+	x=rand()%6;
+	switch (x)
+	{
+		case(0):
+		temp=a;a=b;b=temp;
+		break;
+		case(1):
+		temp=a;a=c;c=temp;
+		break;
+		case(2):
+		temp=a;a=d;d=temp;
+		break;
+		case(3):
+		temp=b;b=c;c=temp;
+		break;
+		case(4):
+		temp=b;b=d;d=temp;
+		break;
+		case(5):
+		temp=c;c=d;d=temp;
+		break;
+	}
+	x=rand()%6;
+	switch (x)
+	{
+		case(0):
+		temp=a;a=b;b=temp;
+		break;
+		case(1):
+		temp=a;a=c;c=temp;
+		break;
+		case(2):
+		temp=a;a=d;d=temp;
+		break;
+		case(3):
+		temp=b;b=c;c=temp;
+		break;
+		case(4):
+		temp=b;b=d;d=temp;
+		break;
+		case(5):
+		temp=c;c=d;d=temp;
+		break;
+	}
+}
